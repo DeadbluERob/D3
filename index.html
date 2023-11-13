@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nintendo Stock Price</title>
+  <style>
+    rect {
+      pointer-events: all;    
+      
+      z-index: 1;
+    }
+
+    .tooltip {
+    position: absolute;
+    padding: 5px;
+    background-color: rgb(11, 40, 65);
+    color: white;
+    border: 0px solid white;
+    border-radius: 0px;
+    display: none;
+    opacity: .75;
+    font-size: 14px;
+  }
+
+  .tooltip-line {
+  background-color: tomato;
+} 
+.d3-slider-handle {
+    fill: red; /* Replace with your desired color */
+    stroke: green; /* Replace with your desired color */
+    stroke-width: 10px;
+  }
+text{fill: black;}
+  .d3-slider-range{
+  fill: red;
+  stroke: red;
+  stroke-width: 1px;
+  stroke-opacity: 0.3;
+}
+.d3-slider .track,
+.d3-slider .track-inset,
+.d3-slider .track-overlay {
+  height: 12% /* Set this to the desired height */
+}
+path{
+  fill: red;
+  stroke: black;
+  stroke-width: 5px;
+  background-color: red;
+  
+}
+slider{
+  height: 400px;
+}
+  </style>
+ </head>
+
+<body>
+
+  <div id="chart-container"></div>
+  <div id="slider-range">
+    <input type="text" id="fromDate" readonly>
+    <input type="text" id="toDate" readonly>
+  </div>
+ 
+  <!-- Include the D3.js library -->
+  
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/d3-simple-slider"></script>
+  
+  <!-- Include your custom script file -->
+  <script src="scriptvideo3.js"></script>
+</body>
+
+</html>
